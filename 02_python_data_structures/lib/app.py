@@ -3,112 +3,115 @@
 
 # Creating Lists
 #1. ✅ Create a list of 10 pet names
-pet_names = ['Rose', 'Meow Meow Beans', 'Mr.Legumes', 'Luke', 'Lea', 'Princess Grace', 'Spot', 'Tom', 'Mini', 'Paul']
+# pet_names = ['Rose', 'Meow Meow Beans', 'Mr.Legumes', 'Luke', 'Lea', 'Princess Grace', 'Spot', 'Tom', 'Mini', 'Paul']
 
-# Reading Information From Lists
-#2. ✅ Return the first pet name 
-print(pet_names[0])
+# # Reading Information From Lists
+# #2. ✅ Return the first pet name 
+# print(pet_names[0])
 
-#3. ✅ Return all pet names beginning from the 3rd index
-print(pet_names[3:])
+# #3. ✅ Return all pet names beginning from the 3rd index
+# print(pet_names[3:])
 
-#4. ✅ Return all pet names before the 3rd index
-print(pet_names[:3])
+# #4. ✅ Return all pet names before the 3rd index
+# print(pet_names[:3])
 
-#5. ✅  Return all pet names beginning from the 3rd index and up to the 7th
-print(pet_names[3:7])
+# #5. ✅  Return all pet names beginning from the 3rd index and up to the 7th
+# print(pet_names[3:7])
 
-#6. ✅ Find the index of a given element
-print(pet_names.index("Lea"))
+# #6. ✅ Find the index of a given element
+# print(pet_names.index("Lea"))
 
-#7. ✅ Reverse the original list
-pet_names.reverse()
-print(pet_names)
+# #7. ✅ Reverse the original list
+# pet_names.reverse()
+# print(pet_names)
 
-#8. ✅ Return the frequency of a given element 
-print(pet_names.count("Lea"))
+# #8. ✅ Return the frequency of a given element 
+# print(pet_names.count("Lea"))
 
-# Updating Lists
-#9. ✅ Change the first element to all uppercase 
-pet_names[0] = pet_names[0].upper()
-#OR
-print(pet_names[0].upper())
+# # Updating Lists
+# #9. ✅ Change the first element to all uppercase 
+# pet_names[0] = pet_names[0].upper()
+# #OR
+# print(pet_names[0].upper())
 
-#10. ✅ Append a new name to the list
-pet_names.append("Beau")
-print(pet_names)
+# #10. ✅ Append a new name to the list
+# pet_names.append("Beau")
+# print(pet_names)
 
-#11. ✅ Add a new name at a specific index
-pet_names.insert(2, "Winnie")
-print(pet_names)
+# #11. ✅ Add a new name at a specific index
+# pet_names.insert(2, "Winnie")
+# print(pet_names)
 
-#12. ✅ Add two lists together 
-pet_breeds = ['french bulldog', 'golden retreiver', 'pittbull']
-result = pet_names + pet_breeds
-print(result)
-#OR
-#pet_names.extend(pet_breeds)
-#print(pet_names)
+# #12. ✅ Add two lists together 
+# pet_breeds = ['french bulldog', 'golden retreiver', 'pittbull']
+# result = pet_names + pet_breeds
+# print(result)
+# #OR
+# #pet_names.extend(pet_breeds)
+# #print(pet_names)
 
-#13. ✅ Remove the final element from the list
-result.pop()
-print(result)
-#OR
-#pet_names.pop()
-#print(pet_names)
+# #13. ✅ Remove the final element from the list
+# result.pop()
+# print(result)
+# #OR
+# #pet_names.pop()
+# #print(pet_names)
 
-#14. ✅ Remove element by specific index
-index_to_remove = 4
-result.pop(index_to_remove)
-print(result)
-#OR
-#pet_names.remove(pet_names[0])
-#print(pet_names_)
+# #14. ✅ Remove element by specific index
+# index_to_remove = 4
+# result.pop(index_to_remove)
+# print(result)
+# #OR
+# #pet_names.remove(pet_names[0])
+# #print(pet_names_)
 
-#15. ✅ Remove a specific element 
-element_to_remove = 'Tom'
-result.remove(element_to_remove)
-print(result)
-#OR
-#pet_names.remove("Meow Meow Beans")
-#print(pet_names)
+# #15. ✅ Remove a specific element 
+# element_to_remove = 'Tom'
+# result.remove(element_to_remove)
+# print(result)
+# #OR
+# #pet_names.remove("Meow Meow Beans")
+# #print(pet_names)
 
-#16. ✅ Remove all pet names from the list
-pet_names.clear()
-print(pet_names)
-print(pet_breeds)
+# #16. ✅ Remove all pet names from the list
+# pet_names.clear()
+# print(pet_names)
+# print(pet_breeds)
 
 #Tuple 
 # 📚 Review With Students:
     # Mutable, Immutable, Changeable, Unchangeable
 
 #17. ✅ Create a Tuple of pet 10 ages 
-pet_ages=[1,2,3,4,5,6,7,8,9,10]
+# pet_ages=(1,2,3,4,5,6,7,8,9,10)
 
-#18. ✅ Print the first pet age
+# #18. ✅ Print the first pet age
+# print(pet_ages(8))
 
+# # Testing Changeability 
+# #19. ✅ Attempt to remove an element with ".pop" (should error)
+# pet_ages.pop()
 
-# Testing Changeability 
-#19. ✅ Attempt to remove an element with ".pop" (should error)
+# #20. ✅ Attempt to change the first element (should error)
+# pet_ages[0] = pet_ages
 
+# # Tuple Methods
+# #21. ✅ Return the frequency of a given element
+# print(pet_ages.count(3))
 
-#20. ✅ Attempt to change the first element (should error)
+# #22. ✅ Return the index of a given element 
+# print(pet_ages.index(4))
 
+# #23. ✅ Create a Range 
+# #Note:  Ranges are primarily used in loops
+# range_to_10 = range(0, 10, 3) #start, stop, number of steps
 
-# Tuple Methods
-#21. ✅ Return the frequency of a given element
-
-
-#22. ✅ Return the index of a given element 
-
-
-#23. ✅ Create a Range 
-#Note:  Ranges are primarily used in loops
-
+# for n in range_to_10:
+#     print(n)
 
 # Demo Sets (Stretch Goal)
 #24. ✅ Create a set of 3 pet foods
-
+pet_foods = {'tuna', 'carrot', 'chicken'}
 
 # Demo Dictionaries 
 # Creating 
@@ -118,32 +121,37 @@ pet_info_rose = {'name':'rose','age':11,'breed':'domestic long '}
 
 #26. ✅  Use dict to create a dictionary of pet information with the keys "name", "age" and "breed"
 pet_info_spot = dict(name='Spot', age=25, breed='boxer')
-
+print(pet_info_spot)
 
 # Reading
 #27. ✅ Print the pet attribute of "name" using bracket notation 
-
+print(pet_info_rose['name'])
 
 #28. ✅ Print the pet attribute of "age" using ".get"
 #Note: ".get" is preferred over bracket notation in most cases because it will return "None" instead of an error
-
+print(pet_info_rose.get('age'))
 
 # Updating 
 #29. ✅ Update the pets age to 12
-
+pet_info_rose['age'] = 12
+print(pet_info_rose)
 
 #30. ✅ Update the other pets age to 26
-
+pet_info_spot['age'] = 26
+print(pet_info_spot)
 
 # Deleting
 #30. ✅ Delete a pets age using the "del" keyword 
-
+del pet_info_rose['age']
+print(pet_info_rose)
 
 #31. ✅ Delete the other pets age using ".pop"
-
+pet_info_spot.pop('age')
+print(pet_info_spot)
 
 #32. ✅ Delete the last item in the pet dictionary using "popitem()"
-
+pet_info_rose.popitem()
+print(pet_info_rose)
 
 # Demo Loops 
 pet_info = [
