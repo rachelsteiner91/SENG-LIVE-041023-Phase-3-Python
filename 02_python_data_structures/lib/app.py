@@ -30,6 +30,8 @@ print(pet_names.count("Lea"))
 
 # Updating Lists
 #9. ✅ Change the first element to all uppercase 
+pet_names[0] = pet_names[0].upper()
+#OR
 print(pet_names[0].upper())
 
 #10. ✅ Append a new name to the list
@@ -44,20 +46,32 @@ print(pet_names)
 pet_breeds = ['french bulldog', 'golden retreiver', 'pittbull']
 result = pet_names + pet_breeds
 print(result)
+#OR
+#pet_names.extend(pet_breeds)
+#print(pet_names)
 
 #13. ✅ Remove the final element from the list
 result.pop()
 print(result)
+#OR
+#pet_names.pop()
+#print(pet_names)
 
 #14. ✅ Remove element by specific index
 index_to_remove = 4
 result.pop(index_to_remove)
 print(result)
+#OR
+#pet_names.remove(pet_names[0])
+#print(pet_names_)
 
 #15. ✅ Remove a specific element 
 element_to_remove = 'Tom'
 result.remove(element_to_remove)
 print(result)
+#OR
+#pet_names.remove("Meow Meow Beans")
+#print(pet_names)
 
 #16. ✅ Remove all pet names from the list
 pet_names.clear()
@@ -69,7 +83,7 @@ print(pet_breeds)
     # Mutable, Immutable, Changeable, Unchangeable
 
 #17. ✅ Create a Tuple of pet 10 ages 
-
+pet_ages=[1,2,3,4,5,6,7,8,9,10]
 
 #18. ✅ Print the first pet age
 
