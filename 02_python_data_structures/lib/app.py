@@ -46,15 +46,21 @@ result = pet_names + pet_breeds
 print(result)
 
 #13. ✅ Remove the final element from the list
-
+result.pop()
+print(result)
 
 #14. ✅ Remove element by specific index
-
+index_to_remove = 4
+result.pop(index_to_remove)
+print(result)
 
 #15. ✅ Remove a specific element 
-
+element_to_remove = 'Tom'
+result.remove(element_to_remove)
+print(result)
 
 #16. ✅ Remove all pet names from the list
+
 
 
 #Tuple 
