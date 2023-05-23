@@ -137,11 +137,14 @@ pet_info_rose['age'] = 12
 print(pet_info_rose)
 
 #30. ✅ Update the other pets age to 26
+pet_info_spot.update({'age': 26})
+#OR
 pet_info_spot['age'] = 26
 print(pet_info_spot)
 
 # Deleting
 #30. ✅ Delete a pets age using the "del" keyword 
+print(pet_info_spot) #this shows us the before and after
 del pet_info_rose['age']
 print(pet_info_rose)
 
@@ -154,6 +157,7 @@ pet_info_rose.popitem()
 print(pet_info_rose)
 
 # Demo Loops 
+#name, age and breed are key. rose, 11 and domestic long haired are value
 pet_info = [
     {
         'name':'rose',
