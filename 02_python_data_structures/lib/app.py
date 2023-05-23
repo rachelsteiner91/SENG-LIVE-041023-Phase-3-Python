@@ -60,8 +60,9 @@ result.remove(element_to_remove)
 print(result)
 
 #16. ✅ Remove all pet names from the list
-
-
+pet_names.clear()
+print(pet_names)
+print(pet_breeds)
 
 #Tuple 
 # 📚 Review With Students:
