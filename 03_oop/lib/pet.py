@@ -1,18 +1,24 @@
 #!/usr/bin/env python3
 # Demonstrate classes 
 # 1. ✅ Create a Pet class
+#class keyword
+# class Pet: #UpperCamelCase #PascalCase
 # 2. ✅ Instantiate a few pet instance 
     # Compare the pet instances to demonstrate they are not the same object
     # Note: add 'pass' to the pet class 
 
 
-class Pet:
-    # pass
+
 # 3. ✅ Demonstrate __init__ 
     # Add arguments to instances  
     # use dot notation to access their attributes 
     # update attributes with new values 
+class Pet:
+    def __init__(self): #initialization method to provide objects (instances) with unique attributes upojn the instantiation
+        print(self)
+    pass
 
+beau = Pet() #instantiate a new instance
 
 # 4.✅ Demonstrate instance methods by creating a print_pet_details function that will print the pet attributes
 #     Review the self keyword 
