@@ -14,3 +14,27 @@
 
 
     # With pie syntax
+
+def coupon_calculator(callbackfunc):
+
+    def report_price():
+        print('Initial price = $28.00') #print the initial price 
+        final_price = callbackfunc 
+
+        print(f'Newly Discounted price = ${final_price}')
+    
+    return report_price
+
+#9
+#without decorator aka pie syntax
+def calculate_price(price):
+    return '{:.2f}'.format(round(price/2, 2)) #with 2 decimal points
+
+calculate = coupon_calculator(calculate_price)
+calculate() #invoke the coupon calculator
+
+
+#with pie/decorator syntax
+@coupon_calculator
+def calculate_price(price):
+    return '{:.2f}'.format
